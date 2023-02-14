@@ -1,0 +1,58 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    background-color: var(--main-background-color);
+}
+
+p, a, h1 {
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    word-break: break-all;
+}
+
+:root{
+    --main-background-color: #111;
+    --secondary-background-color: #223;
+    --tertiary-background-color: #334;
+    
+    --main-color: #cdd;
+    --secondary-color: #ddf;
+    --hover-color: #fff;
+    --accent-color: rgb(228, 138, 54);
+
+    --main-font-family: "Montserrat", sans-serif;
+}
+
+.navbar{
+    background-color: var(--secondary-background-color);
+    padding: 20px 10px 20px 10px;
+}
+
+.nav-item {
+    color: var(--main-color);
+    font-size:x-large;
+    font-family: var(--main-font-family);
+    margin: 2rem;
+    transition: color 200ms ease-in-out;
+}
+
+.nav-item:hover {
+    color: var(--hover-color);
+    transition: color 200ms ease-in-out;
+}
+.selected {
+    color: var(--accent-color);
+    transition: color 200ms ease-in-out;
+}
+
+.title{
+    font-size: 4em;
+}
+
+.page{
+    width: 80rem;
+    margin: auto;
+    height: 100%;
+    background-color: var(--tertiary-background-color);
+    padding:10px;
+}
