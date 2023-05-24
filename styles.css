@@ -1,60 +1,21 @@
-html, body {
-    margin:0px;
-    padding:0px;
-    background-color: var(--main-background-color);
+:root {
+    --background-color: #eee;
+
+    --color: #070707;
 }
 
-:root{
-    --main-background-color: #111;
-    --secondary-background-color: #223;
-    --tertiary-background-color: #334;
-    
-    --main-color: #cdd;
-    --secondary-color: #ddf;
-    --hover-color: #fff;
-    --accent-color: rgb(228, 138, 54);
-
-    --main-font-family: "Montserrat", sans-serif;
-}
-
-p, div, a, h1 {
-    color: var(--main-color);
-    font-family: var(--main-font-family);
+body {
     margin: 0px;
-    padding: 15px;
+    padding: 10px;
+    background-color: var(--background-color);
 }
 
-.nav {
-    background-color: var(--secondary-background-color);
-    padding:15px;
+h1, h2, h3, h4, h5, h6, p, i, a, span, button, table, th, td, tr {
+    color: var(--color);
+    font-family: "Poppins";
+    margin: 5px;
 }
 
-.nav-item {
-    padding-right: 1em;
-    font-size: x-large;
-    transition: color 200ms ease-in-out;
-}
-
-.nav-item:hover {
-    transition: color 200ms ease-in-out;
-    color: var(--secondary-color)
-}
-
-.selected {
-    color: var(--accent-color);
-    transition: color 200ms ease-in-out;
-}
-
-
-.page {
-    background-color: var(--tertiary-background-color);
-    margin: auto;
-    padding:20px;
-    min-width: 20rem;
-    max-width: 80rem;
-    min-height: fit-content;
-}
-
-.title {
-    font-size: xx-large;
+table, th, td, tr {
+    outline: 2px solid grey;
 }
